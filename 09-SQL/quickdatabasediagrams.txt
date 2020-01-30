@@ -9,8 +9,8 @@ dept_name varchar(45)
 
 dept_emp
 -
-dept_no varchar(50) FK >- dept_manager.dept_no
-emp_no integer FK >- dept_manager.emp_no
+dept_no varchar(50)
+emp_no integer FK >- employees.emp_no
 from_date timestamp
 to_date timestamp
 
@@ -18,8 +18,8 @@ dept_manager
 -
 dept_no varchar(50) FK >- departments.dept_no
 emp_no integer
-from_date timestamp FK >- salaries.from_date
-to_date timestamp FK >- salaries.to_date
+from_date timestamp
+to_date timestamp
 
 employees
 -
@@ -34,8 +34,8 @@ salaries
 -
 emp_no integer FK >- employees.emp_no
 salary integer
-from_date timestamp FK >- titles.from_date
-to_date timestamp FK >- titles.to_date
+from_date timestamp
+to_date timestamp
 
 titles
 -
